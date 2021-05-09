@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7B36DDD726485F2000AF176C /* CustomFont.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B36DDD626485F2000AF176C /* CustomFont.swift */; };
 		7BE94128264718D900DBA101 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BE94127264718D900DBA101 /* AppDelegate.swift */; };
 		7BE9412A264718D900DBA101 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BE94129264718D900DBA101 /* SceneDelegate.swift */; };
 		7BE9412C264718D900DBA101 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BE9412B264718D900DBA101 /* ViewController.swift */; };
@@ -36,6 +37,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		7B36DDD626485F2000AF176C /* CustomFont.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomFont.swift; sourceTree = "<group>"; };
 		7BE94124264718D900DBA101 /* UIPropertyAnimator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UIPropertyAnimator.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7BE94127264718D900DBA101 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7BE94129264718D900DBA101 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -109,6 +111,7 @@
 				7BE94135264718DA00DBA101 /* LaunchScreen.storyboard */,
 				7BE94138264718DA00DBA101 /* Info.plist */,
 				7BE94130264718D900DBA101 /* UIPropertyAnimator.xcdatamodeld */,
+				7B36DDD626485F2000AF176C /* CustomFont.swift */,
 			);
 			path = UIPropertyAnimator;
 			sourceTree = "<group>";
@@ -261,6 +264,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7B36DDD726485F2000AF176C /* CustomFont.swift in Sources */,
 				7BE9412C264718D900DBA101 /* ViewController.swift in Sources */,
 				7BE94132264718D900DBA101 /* UIPropertyAnimator.xcdatamodeld in Sources */,
 				7BE94128264718D900DBA101 /* AppDelegate.swift in Sources */,
