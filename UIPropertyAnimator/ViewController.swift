@@ -20,15 +20,20 @@ class ViewController: UIViewController {
     }
 
     func configureInitialSetup() {
-        planetImageView.alpha = 0.0
+        planetImageView.alpha = 1.0
         planetImageView.transform = CGAffineTransform(scaleX: 0.01, y: 0.01)
     }
     
     func configureEndAnimations() {
         animator.addAnimations {
-            self.planetImageView.alpha = 1.0
-            self.planetImageView.transform = CGAffineTransform(scaleX: 3, y: 3)
+            self.planetImageView.alpha = 0.5
+            self.planetImageView.transform = CGAffineTransform(scaleX: 20, y: 20)
         }
+        
+//        animator.addAnimations({
+//            self.planetImageView.frame.origin.y -= 400
+//        }, delayFactor: 0.5)
+        
     }
 
     @IBAction func valueDidChange(_ sender: UISlider) {
