@@ -9,6 +9,7 @@ import UIKit
 
 class ViewController: UIViewController {
     @IBOutlet var planetImageView: UIImageView!
+    @IBOutlet var textLabel: UILabel!
     
     let animator = UIViewPropertyAnimator(duration: 1.0, curve: .linear)
     
@@ -17,6 +18,19 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view.
         configureInitialSetup()
         configureEndAnimations()
+        
+        let attrString = NSAttributedString(
+            string: "1",
+            attributes: [
+                NSAttributedString.Key.strokeColor: UIColor.black,
+                NSAttributedString.Key.foregroundColor: UIColor.white,
+                NSAttributedString.Key.strokeWidth: -2.0,
+                NSAttributedString.Key.font: UIFont.systemFont(ofSize: 80.0)
+            ]
+        )
+        textLabel.attributedText = attrString
+        
+        Timer.scheduledTimer(timeInterval: 0.08, target: self, selector: #selector(figureFunc), userInfo: nil, repeats: true)
     }
 
     func configureInitialSetup() {
@@ -26,7 +40,7 @@ class ViewController: UIViewController {
     
     func configureEndAnimations() {
         animator.addAnimations {
-            self.planetImageView.alpha = 0.5
+            self.planetImageView.alpha = 1.0
             self.planetImageView.transform = CGAffineTransform(scaleX: 20, y: 20)
         }
         
@@ -36,6 +50,15 @@ class ViewController: UIViewController {
         
     }
 
+    @objc func figureFunc(){
+        var r = Float.random(in: 0.1...0.6)
+        print("값은 ? \(r)")
+        animator.fractionComplete = CGFloat(r)
+    }
+    
+    
+    
+    
     @IBAction func valueDidChange(_ sender: UISlider) {
         print(sender.value)
         animator.fractionComplete = CGFloat(sender.value)

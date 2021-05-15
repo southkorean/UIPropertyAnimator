@@ -35,10 +35,13 @@
                                     <action selector="valueDidChange:" destination="BYZ-38-t0r" eventType="valueChanged" id="D0q-ne-kNs"/>
                                 </connections>
                             </slider>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="테스트 문자열입니다." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dHK-va-Ry7">
-                                <rect key="frame" x="71" y="202" width="229" height="136"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qzP-Dd-0Ez">
+                                <rect key="frame" x="157" y="249" width="100" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="rUf-iz-K6P"/>
+                                    <constraint firstAttribute="height" constant="100" id="tuO-O0-3Wc"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="65"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -48,17 +51,20 @@
                         <constraints>
                             <constraint firstItem="Lmo-Hs-NVV" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="1dX-NX-MpN"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="wMB-gg-d2A" secondAttribute="bottom" constant="20" id="Qo9-Sx-Mjf"/>
+                            <constraint firstItem="qzP-Dd-0Ez" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Z8r-un-HKR"/>
+                            <constraint firstItem="qzP-Dd-0Ez" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="249" id="i2T-X7-mHW"/>
                             <constraint firstItem="wMB-gg-d2A" firstAttribute="top" secondItem="Lmo-Hs-NVV" secondAttribute="bottom" id="tPa-i6-8uv"/>
                             <constraint firstItem="wMB-gg-d2A" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="yDr-wJ-Qgd"/>
                         </constraints>
                     </view>
                     <connections>
                         <outlet property="planetImageView" destination="Lmo-Hs-NVV" id="rIj-VY-c8e"/>
+                        <outlet property="textLabel" destination="qzP-Dd-0Ez" id="xLY-de-s0Y"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="132" y="114.69265367316342"/>
+            <point key="canvasLocation" x="131.8840579710145" y="114.1304347826087"/>
         </scene>
     </scenes>
     <resources>
