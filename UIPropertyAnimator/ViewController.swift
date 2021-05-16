@@ -31,6 +31,8 @@ class ViewController: UIViewController {
         textLabel.attributedText = attrString
         
         Timer.scheduledTimer(timeInterval: 0.08, target: self, selector: #selector(figureFunc), userInfo: nil, repeats: true)
+        
+        Timer.scheduledTimer(withTimeInterval: <#T##TimeInterval#>, repeats: <#T##Bool#>, block: <#T##(Timer) -> Void#>)
     }
 
     func configureInitialSetup() {

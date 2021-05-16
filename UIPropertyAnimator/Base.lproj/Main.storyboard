@@ -35,7 +35,7 @@
                                     <action selector="valueDidChange:" destination="BYZ-38-t0r" eventType="valueChanged" id="D0q-ne-kNs"/>
                                 </connections>
                             </slider>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qzP-Dd-0Ez">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qzP-Dd-0Ez">
                                 <rect key="frame" x="157" y="249" width="100" height="100"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="100" id="rUf-iz-K6P"/>
